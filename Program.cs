@@ -192,7 +192,7 @@ namespace Calculator1
             System.Console.WriteLine("The explain keyword is to explain every keyword in detail");
         }
         static void ExplainText(){
-            System.Console.WriteLine("+ : Adds stuff \n- : Subtracts stuff\n*: Multiplies stuff\n/ : Divides stuff\n remainder: Divides stuff and tells you the remainder \n!: Factorial\nsqr : Squares a number \nsqrt: Find out the square root of a number \n%: First number added is the number and second is the percent. Result is number/100 * percent\n random: Generates a random number. First value you add is the minimum and second is the maximum range\nprime: Checks if the given number is prime or not\nhypotenuse: Takes in A and B. Squares A and B, Adds them together and square roots the result\npie : Shows you the value of pie");
+            System.Console.WriteLine("+ : Adds stuff\n- : Subtracts stuff\n*: Multiplies stuff\n/ : Divides stuff\nremainder: Divides stuff and tells you the remainder\n!: Factorial\nsqr : Squares a number\nsqrt: Find out the square root of a number\n%: First number added is the number and second is the percent. Result is number/100 * percent\n random: Generates a random number. First value you add is the minimum and second is the maximum range\nprime: Checks if the given number is prime or not\nhypotenuse: Takes in A and B. Squares A and B, Adds them together and square roots the result\npie : Shows you the value of pie");
         }
 
         static void switchBoi(string _expression){
