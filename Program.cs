@@ -9,6 +9,8 @@ namespace Calculator1
         static bool ifPrime;
         static double num;
 
+        static bool boolResult;
+
         public static string expression;
         static void Main(string[] args)
         {
@@ -32,7 +34,7 @@ namespace Calculator1
            {
               num = Convert.ToDouble(firstValue);
           
-            Console.WriteLine("Type what you want me to do with the number (+, -, *, /, !, remainder, sqr, sqrt, hypotenuse, prime, random, %, explain)");
+            Console.WriteLine("Type what you want me to do with the number (+, -, *, /, !, remainder, sqr, sqrt, hypotenuse, prime, random, %, explain, leap)");
             expression = Console.ReadLine();                    
             
                switchBoi(expression);
@@ -181,6 +183,15 @@ namespace Calculator1
             result = DivideEm(Multiply(num, percent), 100);
             return result;
         }
+
+        static bool CheckIfLeap(double num){
+            if(num % 4 == 0){
+                return true;
+            }
+            else{
+                return false;
+            }
+        }
         
         #endregion
 
@@ -266,7 +277,11 @@ namespace Calculator1
                     break; 
                 case "explain":
                 ExplainText();
-                    break;                       
+                    break; 
+                case "leap":
+                boolResult = CheckIfLeap(num);
+                DisplayResult(boolResult);
+                    break;
                 default:
                 System.Console.WriteLine("That is not a thing I can do! Maybe you have misspelled it?");   
                     break;         
