@@ -21,8 +21,11 @@ namespace Calculator1
           {
               HelpText();
           }
+          else if (firstValue == "explain"){
+              ExplainText();
+          }
           else if(firstValue == "pie"){
-              double pieValue = DivideEm(22, 7);
+              decimal pieValue = (decimal) 22/7;
               System.Console.WriteLine(pieValue);
           }
           else if(double.TryParse(firstValue ,out num))
